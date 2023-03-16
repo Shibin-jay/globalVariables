@@ -5,7 +5,7 @@ const numInput= document.getElementById('InputPhNum');
 const numHelpline= document.getElementById('numberHelpline');
 const fileInput = document.getElementById('image');
 const fileHelpLine = document.getElementById('uploadHelpline');
-const maxFileSize = 1000000; 
+const maxFileSize = 1000000;
 let isValid= false;
 
 emailInput.addEventListener('keyup',function(){
@@ -39,6 +39,7 @@ numInput.addEventListener('keyup', function(){
     else{
         numHelpline.textContent="";
         isValid=true;
+        alert("h")
     }
     updateSubmitBtnState();
 })
